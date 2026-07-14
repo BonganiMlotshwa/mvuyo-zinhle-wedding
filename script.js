@@ -62,3 +62,21 @@ if (rsvpForm) {
         rsvpForm.reset();
     });
 }
+
+// Program Button - Toggle
+const programBtn = document.getElementById('programBtn');
+if (programBtn) {
+    programBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const programContent = document.getElementById('programContent');
+        
+        if (programContent.classList.contains('show')) {
+            programContent.classList.remove('show');
+            programBtn.textContent = 'Open Program';
+        } else {
+            programContent.classList.add('show');
+            programBtn.textContent = 'Hide Program';
+            programContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+}

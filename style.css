@@ -498,3 +498,44 @@ html {
         padding: 20px;
     }
 }
+
+/* Program Section */
+#program {
+    background: #f8f3ed;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.program-toggle {
+    margin: 40px 0;
+}
+
+.program-btn {
+    margin-top: 0;
+    padding: 18px 45px;
+    border: none;
+    border-radius: 50px;
+    background: #b85c2c;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.program-btn:hover {
+    background: #8d431d;
+    transform: translateY(-3px);
+}
+
+.program-content {
+    display: none;
+    max-width: 600px;
+    margin: 30px auto 0;
+    animation: slideUp 0.8s ease-out;
+}
+
+.program-content.show {
+    display: block;
+}
