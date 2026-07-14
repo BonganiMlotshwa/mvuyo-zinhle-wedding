@@ -1,0 +1,12 @@
+{
+  "name": "mvuyo-zinhle-wedding",
+  "version": "1.0.0",
+  "description": "Wedding website for Mvuyo & Zinhle",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": ["wedding", "invitation"],
+  "author": "Mvuyo & Zinhle",
+  "license": "MIT"
+}
