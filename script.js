@@ -25,14 +25,14 @@ if (openBtn) {
         e.preventDefault();
         const invitationSection = document.getElementById('invitation');
         
-        if (invitationSection.style.display === 'none' || invitationSection.style.display === '') {
-            invitationSection.style.display = 'block';
+        if (invitationSection.classList.contains('show')) {
+            invitationSection.classList.remove('show');
+            openBtn.textContent = 'Open Invitation';
+            document.querySelector('.hero').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            invitationSection.classList.add('show');
             openBtn.textContent = 'Hide Invitation';
             invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        } else {
-            openBtn.textContent = 'Open Invitation';
-            invitationSection.style.display = 'none';
-            document.querySelector('.hero').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 }

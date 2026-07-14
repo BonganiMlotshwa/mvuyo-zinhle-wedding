@@ -179,6 +179,11 @@ html {
     background: #f8f3ed;
     padding: 80px 20px;
     text-align: center;
+    display: none;
+}
+
+#invitation.show {
+    display: block;
 }
 
 .invitation-details {
