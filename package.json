@@ -4,7 +4,8 @@
   "description": "Wedding website for Mvuyo & Zinhle",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'Static site - no build required'"
+    "build": "echo 'Static site - no build required'",
+    "preview": "npx http-server"
   },
   "keywords": ["wedding", "invitation"],
   "author": "Mvuyo & Zinhle",

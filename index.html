@@ -26,12 +26,12 @@
                 <div><span id="minutes">00</span><small>Minutes</small></div>
                 <div><span id="seconds">00</span><small>Seconds</small></div>
             </div>
-            <a href="#invitation"><button>Open Invitation</button></a>
+            <a href="#invitation"><button id="openBtn">Open Invitation</button></a>
         </div>
     </section>
 
     <!-- INVITATION -->
-    <section id="invitation">
+    <section id="invitation" style="display: none;"></section>
         <h2 class="section-title">Wedding Invitation</h2>
         <div class="card">
             <img src="assets/images/invitation.jpeg" alt="Wedding Invitation">
@@ -71,52 +71,6 @@
                     <p>Black & White / Burnt Orange</p>
                     <p>Elegant Formal</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- LOCATION -->
-    <section id="location" class="location-section">
-        <div class="container">
-            <h2 class="section-title">Location</h2>
-            <div class="location-content">
-                <div class="location-info">
-                    <h3>Mashobeni South Apostolic Church</h3>
-                    <p>Mashobeni South</p>
-                    <p>Contact: Available upon request</p>
-                    <p class="location-note">Directions will be provided to confirmed guests</p>
-                </div>
-                <div class="map-placeholder">
-                    <p>📍 Venue Location</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RSVP -->
-    <section id="rsvp" class="rsvp-section">
-        <div class="container">
-            <h2 class="section-title">RSVP</h2>
-            <div class="rsvp-content">
-                <div class="rsvp-info">
-                    <p>Kindly confirm your attendance by <strong>15 July 2026</strong></p>
-                    <p class="contact-details">
-                        <strong>Phone:</strong> (+268) 7679 8710 / 7646 8794<br>
-                        <strong>Note:</strong> This is a formal black-tie wedding. Elegant formal attire required.
-                    </p>
-                </div>
-                <form class="rsvp-form">
-                    <input type="text" id="name" placeholder="Your Full Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <input type="tel" id="phone" placeholder="Your Phone Number" required>
-                    <select id="attendance" required>
-                        <option value="">Will you be attending?</option>
-                        <option value="yes">Yes, I'll be there</option>
-                        <option value="no">Sorry, I cannot attend</option>
-                    </select>
-                    <textarea id="message" placeholder="Leave a message for the couple..." rows="4"></textarea>
-                    <button type="submit">Submit RSVP</button>
-                </form>
             </div>
         </div>
     </section>

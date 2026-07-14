@@ -18,6 +18,25 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
+// Open Invitation Button - Toggle
+const openBtn = document.getElementById('openBtn');
+if (openBtn) {
+    openBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const invitationSection = document.getElementById('invitation');
+        
+        if (invitationSection.style.display === 'none' || invitationSection.style.display === '') {
+            invitationSection.style.display = 'block';
+            openBtn.textContent = 'Hide Invitation';
+            invitationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            openBtn.textContent = 'Open Invitation';
+            invitationSection.style.display = 'none';
+            document.querySelector('.hero').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+}
+
 // RSVP Form Handler
 const rsvpForm = document.querySelector('.rsvp-form');
 if (rsvpForm) {
